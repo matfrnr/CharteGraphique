@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Akira Expanded";
+  src: url("fonts/AkiraExpandedDemo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Akira Expanded", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -150,6 +163,10 @@ body {
   margin-bottom: 20px;
 }
 
+.color-subsection {
+  margin-bottom: 40px; /* Espace entre les sous-sections */
+}
+
 .color-card {
   background: white;
   border-radius: 20px;
@@ -211,16 +228,20 @@ body {
 }
 
 .h1-sample {
+  font-family: "Akira Expanded", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
 }
 .h2-sample {
+  font-family: "Akira Expanded", sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
 .body-sample {
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .components-grid {
@@ -274,7 +295,7 @@ body {
 }
 
 .download-section {
-  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%) !important;
   color: white;
   text-align: center;
 }

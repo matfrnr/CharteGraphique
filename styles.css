@@ -453,76 +453,82 @@ body {
 
 /* Styles CSS pour le moodboard */
 .moodboard-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .moodboard-row {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .moodboard-image-wrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-    cursor: pointer;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .moodboard-image {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 /* Version responsive */
 @media (max-width: 768px) {
-    .moodboard-image {
-        height: 220px;
-    }
+  .moodboard-image {
+    height: 220px;
+  }
 }
 
 @media (max-width: 480px) {
-    .moodboard-container {
-        padding: 10px;
-    }
-    
-    .moodboard-row {
-        gap: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .moodboard-image {
-        height: 180px;
-    }
-    
-    .moodboard-image-wrapper {
-        border-radius: 10px;
-    }
+  .moodboard-container {
+    padding: 10px;
+  }
+
+  .moodboard-row {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .moodboard-image {
+    height: 180px;
+  }
+
+  .moodboard-image-wrapper {
+    border-radius: 10px;
+  }
 }
 
 /* Animation d'apparition */
 .moodboard-row {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.moodboard-row:nth-child(1) { animation-delay: 0.2s; }
-.moodboard-row:nth-child(2) { animation-delay: 0.4s; }
-.moodboard-row:nth-child(3) { animation-delay: 0.6s; }
+.moodboard-row:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.moodboard-row:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.moodboard-row:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
